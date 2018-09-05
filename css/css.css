@@ -1,0 +1,536 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*
+    最小宽度
+ */
+body {
+    min-width: 1200px;
+}
+
+.content {
+    width: 100%;
+    height: 54px;
+    background-color: #2b3142;
+}
+
+/*
+    logo 背景图片的设置
+    清除 后面浮动
+ */
+.nav_logo:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.nav_logo {
+    margin-left: 50px;
+    float: left;
+    display: inline-block;
+    width: 140px;
+    padding-top: 54px;
+    background-image: url("../images/logo-new.png");
+    background-size: 100%;
+}
+
+/*
+    导航栏
+ */
+.nav {
+    margin: auto;
+    height: 54px;
+    width: 86%;
+}
+
+.nav a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.nav ul {
+    position: relative;
+}
+
+.nav > ul > li:nth-last-child(1) {
+    margin-left: 0;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.nav > ul > li:nth-last-child(1) > img {
+    vertical-align: middle;
+    position: absolute;
+    top: -140px;
+    cursor: pointer;
+}
+
+.nav > ul > li:last-child a {
+    padding-right: 30px;
+    background: url("../images/login-tb.png") right -120px no-repeat;
+}
+
+.nav > ul > li {
+    float: left;
+    padding: 0 10px;
+    height: 54px;
+    line-height: 50px;
+
+}
+
+.xueyaun {
+    position: absolute;
+    top: 54px;
+    left: 0;
+    width: 100%;
+    height: 52px;
+    z-index: 1;
+    background-color: #636364;
+    display: none;
+}
+
+.xueyaun ul {
+    margin-left: 100px;
+}
+
+.xueyaun ul li {
+    float: left;
+    margin: 0 10px;
+    color: #fafafa;
+    cursor: pointer;
+}
+
+.nav_find div a img {
+    margin-top: 4px;
+}
+
+.nav_find {
+    position: relative;
+
+    float: right;
+    color: #999999;
+}
+
+.nav_find > div:first-of-type {
+    margin-top: 10px;
+}
+
+.nav_find div {
+    float: left;
+    position: relative;
+}
+
+.nav_find > div > a {
+    position: absolute;
+    top: 4px;
+    left: 180px;
+    display: block;
+}
+
+.nav_find div .shuru {
+    margin-right: 16px;
+    padding: 4px;
+    width: 192px;
+    height: 18px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #ababa8;
+}
+
+.nav_find > div:last-child > ul li {
+    float: left;
+    width: 30px;
+    height: 54px;
+}
+
+.nav_find > div:last-child > ul li:first-of-type {
+    position: relative;
+}
+
+.nav_find > div:last-child > ul li > a {
+    display: block;
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.nav_find .erweima {
+    position: absolute;
+    top: 54px;
+    left: -170px;
+    display: none;
+    z-index: 1;
+}
+
+.nav_find .photoImage {
+    margin-top: 6px;
+}
+
+.photoImg {
+    position: relative;
+    margin: auto;
+    height: 380px;
+}
+
+.fond_size {
+    position: absolute;
+    top: 90px;
+    left: 530px;
+    width: 620px;
+}
+
+.fond_size p {
+    font-size: 48px;
+    color: #009965;
+}
+
+.fond_size span {
+    line-height: 40px;
+    font-size: 16px;
+    color: #009965;
+}
+
+.courseModule:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.courseModule {
+    background-color: #fff;
+    overflow: hidden;
+    width: 1140px;
+    margin: auto;
+    height: 804px;
+}
+
+.leftLine1, .rightLine1 {
+    float: left;
+    width: 36%;
+    height: 1px;
+    margin: 80px 0 56px;
+    background-color: black;
+}
+
+.rightLine {
+    float: right;
+    width: 36%;
+    height: 1px;
+    margin: 68px 0;
+    background-color: black;
+}
+
+.tit {
+    float: left;
+    width: 28%;
+    padding: 50px 0 40px 0;
+    font-size: 36px;
+    color: #333333;
+    text-align: center;
+}
+
+.minPhotoImg > div {
+    position: relative;
+    float: left;
+    width: 368px;
+    height: 207px;
+}
+
+.bg_bleak {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 368px;
+    height: 207px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.minPhotoImg > div > span {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: #f7f7f7;
+    font-size: 18px;
+}
+
+.minPhotoImg > div:nth-of-type(2) {
+    margin: 0 18px;
+}
+
+.minPhotoImg:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.xiangxi_neirong {
+    display: none;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 308px;
+    height: 170px;
+    z-index: 1;
+}
+
+.xiangxi_neirong > div:nth-of-type(1) {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.xiangxi_neirong > div:nth-of-type(2) {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.xiangxi_neirong > div:nth-of-type(3) {
+    line-height: 40px;
+    text-align: center;
+    margin: 16px auto;
+    width: 130px;
+    height: 40px;
+    background-color: #016a66;
+    border-radius: 20px;
+}
+
+.course1 {
+    margin-top: 40px;
+    height: 412px;
+}
+
+.course1_left:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.course1_left {
+    padding: 20px 20px 20px 0;
+    float: left;
+    width: 368px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.course1 .mor:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.course1 .mor {
+    margin-top: 10px;
+    width: 30px;
+    float: left;
+}
+.course1_content {
+    padding: 20px 20px 20px 0;
+    margin: 0 20px;
+    float: left;
+    width: 366px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.course1_right {
+    padding: 20px 20px 20px 0;
+    float: left;
+    width: 366px;
+    height: 100%;
+    box-sizing: border-box;
+}
+/*
+课程 收获
+ */
+.bj_2 {
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.studyCourse {
+    width: 1140px;
+    margin: auto;
+    height: 890px;
+}
+
+.leftLine2, .rightLine2 {
+    width: 30%;
+    height: 1px;
+    margin: 78px 0 38px 0;
+    background-color: #999999;
+    float: left;
+}
+
+.studyCourse .tit {
+    width: 40%;
+    padding: 50px 0 20px 0;
+}
+
+.neiront {
+    width: 650px;
+    margin: auto;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+.yuanquan {
+    width: 1044px;
+    height: 130px;
+    margin: 40px auto;
+}
+
+.yuanquan div:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.yuanquan>div {
+    line-height: 130px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    float: left;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: 0 22px;
+}
+
+.yuanquan div:nth-of-type(1) {
+    background-color: #119bc8;
+}
+
+.yuanquan div:nth-of-type(2) {
+    background-color: #11b9c8;
+}
+
+.yuanquan div:nth-of-type(3) {
+    background-color: #7dad16;
+}
+
+.yuanquan div:nth-of-type(4) {
+    background-color: #ff953f;
+}
+
+.yuanquan div:nth-of-type(5) {
+    background-color: #ff5a3f;
+}
+
+.yuanquan div:nth-of-type(6) {
+    background-color: #ce679f;
+}
+
+.xiangm {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: #333;
+}
+
+.xiangm div:first-child {
+    margin: 20px 0;
+    font-size: 28px;
+}
+
+.xiangm div:last-child {
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.tupain img {
+    width: 100%;
+}
+
+.serveCourse {
+    width: 1140px;
+    margin: auto;
+    height: 700px;
+}
+
+.serveContent_tit {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #2b3142;
+}
+.serveContent > div:nth-of-type(1) {
+    position: relative;
+}
+
+.shoolh {
+    width: 100%;
+    height: 435px;
+    background: url("../images/fifth-bg.png") 100% 100% no-repeat;
+}
+
+.xinxi:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.xinxi {
+    width: 1140px;
+    position: relative;
+}
+
+.xinxi img {
+    position: absolute;
+    top: 80px;
+    left: 120px;
+}
+
+.xinxi h1 {
+    font-size: 28px;
+    position: absolute;
+    top: 180px;
+    color: #fff;
+    left: 230px;
+    font-weight: 100;
+}
+
+.xinxi>div {
+    font-size: 16px;
+    position: absolute;
+    top: 230px;
+    color: #c49195;
+    left: 230px;
+}
+
+.laoshi {
+    width: 100%;
+    height: 576px;
+    background-color: #fafafa;
+}
+.pos{
+    position: relative;
+}
+.imgxinxi {
+    position: absolute;
+    top: 34px;
+    left: 386px;
+    width: 240px;
+    height: 120px;
+    z-index: 1;
+    color: #fafafa;
+    font-size: 14px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.imgxinxi p:first-child{
+    margin-top: 30px;
+}
+.imgxinxi p:last-child{
+    margin-top: 10px;
+}
